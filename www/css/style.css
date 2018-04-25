@@ -8,3 +8,55 @@ ion-view{
     overflow: scroll;
     
 }
+.background1{
+    background-image: url(../img/events.jpeg);
+    background-size: cover;
+}
+.background2{
+    background-image: url(../img/social.jpeg);
+    background-size: cover;
+}
+.background3{
+    background-image: url(../img/onlineadvertising.jpeg);
+    background-size: cover;
+}
+.background4{
+    background-image: url(../img/website.jpeg);
+    background-size: cover;
+}
+.background5{
+    background-image: url(../img/promotion.jpeg);
+    background-size: cover;
+}
+.background6{
+    background-image: url(../img/email1.jpeg);
+    background-size: cover;
+}
+.background7{
+    background-image: url(../img/newspaper.jpeg); 
+    background-size: cover;
+}
+.background8{
+    background-image: url(../img/radio.jpeg);
+    background-size: cover;
+}
+.background9{
+    background-image: url(../img/tv.jpeg);
+    background-size: cover;
+}
+.background10{
+    background-image: url(../img/outdoor.jpeg);
+    background-size: cover;
+}
+.background11{
+    background-image: url(../img/sponsor.jpeg);
+    background-size: cover;
+}
+.background12{
+    background-image: url(../img/video.jpeg);
+    background-size: cover;
+}
+.background13{
+    background-image: url(../img/other.jpeg);
+    background-size: cover;
+}
