@@ -1,1 +1,10 @@
 /* Empty. Add your own CSS if you like */
+ion-content{
+    background-image: url("../img/backgrd.jpg");
+    background-size: cover;
+    color:white;
+}
+ion-view{
+    overflow: scroll;
+    
+}

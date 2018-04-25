@@ -6,6 +6,30 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+/*angular.module('starter', ['ionic', 'firebase'])
+
+  .controller('firebaseCtl', function ($scope, $firebaseObject) {
+    $scope.initializeFirebase = function(){
+      var ref = new Firebase("https://fir-2e110.firebaseio.com/projects/" + $scope.sKey + "/");
+      $scope.albums = $firebaseObject(ref);  
+    }
+
+    $scope.sKey = localStorage.getItem("sMD5");
+    if($scope.sKey != null){
+      $scope.initializeFirebase();
+    }
+
+    $scope.model = {};
+
+    $scope.initializeStorage = function () {
+      sMd5 = CryptoJS.MD5($scope.model.uname + $scope.model.password + "topSecret");
+      localStorage.setItem("sMD5", sMd5);
+      $scope.sKey = localStorage.getItem("sMD5");
+      $scope.initializeFirebase();
+    }
+
+*/
+
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -50,34 +74,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
-        }
-      }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
 
-  .state('tab.account', {
-    url: '/account',
+  .state('tab.contact', {
+    url: '/contact',
     views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
+      'tab-contact': {
+        templateUrl: 'templates/tab-contact.html',
+        controller: 'ContactCtrl'
+      }
+    }
+  })
+
+  .state('tab.elements', {
+    url: '/elements',
+    views: {
+      'tab-elements': {
+        templateUrl: 'templates/tab-elements.html',
+        controller: 'ElementsCtrl'
       }
     }
   });
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');
